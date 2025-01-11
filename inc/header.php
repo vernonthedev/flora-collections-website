@@ -78,4 +78,19 @@
    <link rel="stylesheet" href="assets/css/meanmenu.css">
    <link rel="stylesheet" href="assets/css/spacing.css">
    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Custom Scroll Bar Configurations-->
+    <style>
+            body::-webkit-scrollbar {
+                width: 10px;            
+            }
+            body::-webkit-scrollbar-track {
+                background:rgb(1, 3, 20);       
+            }
+            body::-webkit-scrollbar-thumb {
+                background-color:rgb(184, 184, 184);  
+                border-radius: 20px;     
+                border: 3px solid rgb(184, 184, 184);  
+            }
+        </style>
   </head>
