@@ -68,11 +68,13 @@
                   <div class="col-lg-3 col-md-4 col-sm-6">
                      <div class="footer-widget footer-col-1 mb-40">
                         <div class="footer-logo mb-30">
-                           <a href="index.html"><img src="assets/img/logo/logo-white.png" alt="logo"></a>
+                           <a href="./"> <img src="<?php echo validate_image($_settings->info('logo')) ?>" width="30"
+                           height="30" class="d-inline-block align-top" alt="" loading="lazy"></a>
                         </div>
                         <div class="footer-content">
-                           <p>Elegant pink origami design three <br> dimensional view and decoration co-exist. <br>
-                              Great for adding a decorative touch to <br> any room’s decor.</p>
+                           <p>Whether you’re looking for everyday wear, traditional attire, or custom designs, we have something for everyone. Thank you for supporting local talent and embracing the beauty of African fashion.
+
+</p>
                         </div>
                      </div>
                   </div>
@@ -81,11 +83,10 @@
                         <h4 class="footer-widget__title mb-30">Information</h4>
                         <div class="footer-widget__links">
                            <ul>
-                              <li><a href="#">Custom Service</a></li>
-                              <li><a href="#">FAQs</a></li>
-                              <li><a href="track.html">Ordering Tracking</a></li>
-                              <li><a href="contact.html">Contacts</a></li>
-                              <li><a href="#">Events</a></li>
+                              <li><a href="#">About Us</a></li>
+                              <li><a href="#">Frequently Asked Questions</a></li>
+                              <li><a href="#">Ordering Tracking</a></li>
+                              <li><a href="#">Contact Us</a></li>
                            </ul>
                         </div>
                      </div>
@@ -95,11 +96,10 @@
                         <h4 class="footer-widget__title mb-30">My Account</h4>
                         <div class="footer-widget__links">
                            <ul>
-                              <li><a href="contact.html">Delivery Infomation</a></li>
+                              <li><a href="#">Delivery Infomation</a></li>
                               <li><a href="#">Privacy Policy</a></li>
-                              <li><a href="#">Discount</a></li>
-                              <li><a href="#">Custom Service</a></li>
-                              <li><a href="#">Terms & Condition</a></li>
+                              <li><a href="#">Terms and Conditions</a></li>
+                              <li><a href="#">Customer Service</a></li>
                            </ul>
                         </div>
                      </div>
@@ -109,10 +109,9 @@
                         <h4 class="footer-widget__title mb-30">Social Network</h4>
                         <div class="footer-widget__links">
                            <ul>
+                           <li><a href="#"><i class="fab fa-tiktok"></i>Tiktok</a></li>
                               <li><a href="#"><i class="fab fa-facebook-f"></i>Facebook</a></li>
-                              <li><a href="#"><i class="fab fa-dribbble"></i>Dribbble</a></li>
-                              <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
-                              <li><a href="#"><i class="fab fa-behance"></i>Behance</a></li>
+                              <li><a href="#"><i class="fab fa-twitter"></i>Twitter | X</a></li>                       
                               <li><a href="#"><i class="fab fa-youtube"></i>Youtube</a></li>
                            </ul>
                         </div>
@@ -120,25 +119,17 @@
                   </div>
                   <div class="col-lg-3 col-md-8">
                      <div class="footer-widget footer-col-5 mb-40">
-                        <h4 class="footer-widget__title mb-30">Popular Keywords</h4>
+                        <h4 class="footer-widget__title mb-30">Popular Tags</h4>
                         <div class="footer-widget__links keyword">
-                           <a href="shop.html">Makeup</a>
-                           <a href="shop.html">Dresses For Girls</a>
-                           <a href="shop.html">T-Shirts</a>
-                           <a href="shop.html">Sandals</a>
-                           <a href="shop.html">Headphones</a>
-                           <a href="shop.html">Baby dolls</a>
-                           <a href="shop.html">Blazers</a>
-                           <a href="shop.html">For Men</a>
-                           <a href="shop.html">Handbags</a>
-                           <a href="shop.html">Ladies Watches</a>
-                           <a href="shop.html">Bags</a>
-                           <a href="shop.html">Sport Shoes</a>
-                           <a href="shop.html">Reebok Shoes</a>
-                           <a href="shop.html">Puma Shoes</a>
-                           <a href="shop.html">Boxers</a>
-                           <a href="shop.html">Wallets</a>
-                           <a href="shop.html">Tops</a>
+                           <a href="#">Bitenge Clothing</a>
+                           <a href="#">Kitenge Fashion</a>
+                           <a href="#">African Attire</a>
+                           <a href="#">Locally Made Clothes</a>
+                           <a href="#">Traditional African Wear</a>
+                           <a href="#">Custom African Clothing</a>
+                           <a href="#">African Wedding Outfits</a>
+                           <a href="#">Authentic Bitenge Fabric</a>
+                           <a href="#">Buy Kitenge Online</a>
                         </div>
                      </div>
                   </div>
@@ -152,12 +143,12 @@
                            <i class="far fa-phone"></i>
                         </div>
                         <div class="footer-cta__text">
-                           <a href="tel:0123456">980. 029. 666. 99</a>
-                           <span>Working 8:00 - 22:00</span>
+                           <a href="tel:2567000000000">+256 700 000 000</a>
+                           <span>Working 08:00hrs - 22:00hrs</span>
                         </div>
                      </div>
                   </div>
-                  <div class="col-xl-6 col-lg-8 col-md-8 col-sm-6">
+                  <!-- <div class="col-xl-6 col-lg-8 col-md-8 col-sm-6">
                      <div class="footer-cta__source">
                         <div class="footer-cta__source-content">
                            <h4 class="footer-cta__source-title">Download App on Mobile</h4>
@@ -168,7 +159,7 @@
                            <a href="#"><img src="assets/img/footer/f-app.jpg" alt="app"></a>
                         </div>
                      </div>
-                  </div>
+                  </div> -->
                </div>
             </div>
          </div>

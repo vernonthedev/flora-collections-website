@@ -1,4 +1,121 @@
+      <!-- slider-area-start -->
+      <section class="slider-area slider-bg slider-bg-height">
+         <div class="slider-pagination-2 p-relative">
+            <div class="swiper-containers slidertwo-active">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide slider-bg">
+                     <div class="container">
+                        <div class="slider-top-padding pt-55">
+                           <div class="row p-relative align-items-end">
+                              <div class="col-xl-5 col-lg-6 col-md-6 d-flex align-self-center">
+                                 <div class="tpslidertwo__item">
+                                    <div class="tpslidertwo__content">
+                                       <h4 class="tpslidertwo__sub-title">Winter</h4>
+                                       <h3 class="tpslidertwo__title mb-10">Exclusive <br> Winter Collection</h3>
+                                       <p>New Modern Stylist Fashionable Women's Wear holder</p>
+                                       <div class="tpslidertwo__slide-btn">
+                                          <a class="tp-btn banner-animation" href="">Shop Now <i
+                                             class="fal fa-long-arrow-right"></i>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-xl-7 col-lg-6 col-md-6 d-none d-md-block">
+                                 <div class="tpslidertwo__img p-relative text-end">
+                                    <img src="assets/img/slider/slider-01.png" alt="">
+                                    <div class="tpslidertwo__img-shape">
+                                       <img src="assets/img/slider/fasion-tag-01.png" alt="tag">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide slider-bg">
+                     <div class="container">
+                        <div class="slider-top-padding pt-55">
+                           <div class="row p-relative align-items-end">
+                              <div class="col-xl-5 col-lg-6 col-md-6 d-flex align-self-center">
+                                 <div class="tpslidertwo__item">
+                                    <div class="tpslidertwo__content">
+                                       <h4 class="tpslidertwo__sub-title">Winter</h4>
+                                       <h3 class="tpslidertwo__title mb-10">Exclusive <br> Women's Fashion</h3>
+                                       <p>New Modern Stylist Fashionable Women's Wear holder</p>
+                                       <div class="tpslidertwo__slide-btn">
+                                          <a class="tp-btn banner-animation" href="shop.html">Shop Now <i
+                                             class="fal fa-long-arrow-right"></i>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-xl-7 col-lg-6 col-md-6 d-none d-md-block">
+                                 <div class="tpslidertwo__img p-relative text-end">
+                                    <img src="assets/img/slider/slider-02.png" alt="">
+                                    <div class="tpslidertwo__img-shape">
+                                       <img src="assets/img/slider/fasion-tag-01.png" alt="tag">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide slider-bg">
+                     <div class="container">
+                        <div class="slider-top-padding pt-55">
+                           <div class="row p-relative align-items-end">
+                              <div class="col-xl-5 col-lg-6 col-md-6 d-flex align-self-center">
+                                 <div class="tpslidertwo__item">
+                                    <div class="tpslidertwo__content">
+                                       <h4 class="tpslidertwo__sub-title">Winter</h4>
+                                       <h3 class="tpslidertwo__title mb-10">Exclusive <br> Summer Collection</h3>
+                                       <p>New Modern Stylist Fashionable Women's Wear holder</p>
+                                       <div class="tpslidertwo__slide-btn">
+                                          <a class="tp-btn banner-animation" href="shop.html">Shop Now <i
+                                             class="fal fa-long-arrow-right"></i>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-xl-7 col-lg-6 col-md-6 d-none d-md-block">
+                                 <div class="tpslidertwo__img p-relative text-end">
+                                    <img src="assets/img/slider/slider-03.png" alt="">
+                                    <div class="tpslidertwo__img-shape">
+                                       <img src="assets/img/slider/fasion-tag-01.png" alt="tag">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="slider-two-pagination">
+               <div class="container">
+                  <div class="slider-two-pagination-item p-relative">
+                     <div class="slidertwo_pagination"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- slider-area-end --> 
+ 
+ 
+ 
+ 
+ 
  <!-- Header-->
+ 
+ 
+ 
+ 
+ 
  <header class="bg-dark py-5" id="main-header">
     <div class="container px-4 px-lg-5 my-5">
         <div class="text-center text-white">
@@ -7,6 +124,10 @@
         </div>
     </div>
 </header>
+
+
+
+
 <!-- Section-->
 <section class="py-5">
     <div class="container px-4 px-lg-5 mt-5">
