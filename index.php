@@ -12,6 +12,11 @@
    </div>
    <!-- preloader end  -->
     
+      <!-- Scroll-top -->
+   <button class="scroll-top scroll-to-target" data-target="html">
+      <i class="fas fa-angle-up"></i>
+   </button>
+   <!-- Scroll-top-end-->
 <?php require_once('inc/topBarNav.php') ?>
 <?php $page = isset($_GET['p']) ? $_GET['p'] : 'home';  ?>
 <?php 
