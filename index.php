@@ -3,6 +3,15 @@
 <html lang="en">
 <?php require_once('inc/header.php') ?>
 <body>
+     <!-- preloader -->
+     <div id="preloader">
+      <div class="preloader">
+            <span></span>
+            <span></span>
+      </div>
+   </div>
+   <!-- preloader end  -->
+    
 <?php require_once('inc/topBarNav.php') ?>
 <?php $page = isset($_GET['p']) ? $_GET['p'] : 'home';  ?>
 <?php 
