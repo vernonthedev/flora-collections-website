@@ -438,7 +438,7 @@
    <!-- sidebar-menu-area-end -->
 
    <!-- header-cart-start -->
-   <div class="tpcartinfo tp-cart-info-area p-relative">
+   <!-- <div class="tpcartinfo tp-cart-info-area p-relative">
       <button class="tpcart__close"><i class="fal fa-times"></i></button>
       <div class="tpcart">
          <h4 class="tpcart__title">Your Cart</h4>
@@ -499,7 +499,7 @@
          </div>
       </div>
    </div>
-   <div class="cartbody-overlay"></div>
+   <div class="cartbody-overlay"></div> -->
    <!-- header-cart-end -->
 
 

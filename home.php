@@ -8,21 +8,18 @@
                         <div class="row p-relative justify-content-xl-end align-items-center">
                            <div class="col-xl-5 col-lg-6 col-md-6">
                               <div class="tpslidertwo__content slider-content-3">
-                                 <h3 class="tpslidertwo__title mb-10">Wooden <br> Lounge Furniture</h3>
-                                 <p>New Modern Stylist Fashionable Women's Wear holder</p>
+                                 <h3 class="tpslidertwo__title mb-10">High Quality<br>Dresses </h3>
+                                 <p>High Quality Custom made Dresses For Women At Affordable Prices.</p>
                                  <div class="tpslidertwo__slide-btn d-flex align-items-center ">
-                                    <a class="tp-btn banner-animation mr-25" href="shop.html">Shop Now <i
+                                    <a class="tp-btn banner-animation mr-25" href="">Shop Now <i
                                           class="fal fa-long-arrow-right"></i></a>
-                                    <span>Start From <br> <b>$99.99</b></span>
+                              
                                  </div>
                               </div>
                            </div>
                            <div class="col-xl-5 col-lg-6 col-md-6 d-none d-md-block">
                               <div class="tpsliderthree__img p-relative text-end pt-55">
-                                 <img src="assets/img/slider/slider-04.png" alt="">
-                                 <div class="tpslidertwo__img-shape">
-                                    <img src="assets/img/slider/fasion-tag-02.png" alt="tag">
-                                 </div>
+                                 <img src="assets/img/bitenge/cloth2.png" alt="">                     
                               </div>
                            </div>
                         </div>
@@ -33,21 +30,18 @@
                         <div class="row p-relative justify-content-xl-end align-items-center">
                            <div class="col-xl-5 col-lg-6 col-md-6">
                               <div class="tpslidertwo__content slider-content-3">
-                                 <h3 class="tpslidertwo__title mb-10">Wooden <br> Lounge Chair</h3>
-                                 <p>New Modern Stylist Fashionable Women's Wear holder</p>
+                              <h3 class="tpslidertwo__title mb-10">High Quality<br>Jackets</h3>
+                              <p>High Quality Custom made Jackets For All at Affordable Prices.</p>
                                  <div class="tpslidertwo__slide-btn d-flex align-items-center ">
-                                    <a class="tp-btn banner-animation mr-25" href="shop-2.html">Shop Now <i
+                                    <a class="tp-btn banner-animation mr-25" href="">Shop Now <i
                                           class="fal fa-long-arrow-right"></i></a>
-                                    <span>Start From <br> <b>$99.99</b></span>
+                                    
                                  </div>
                               </div>
                            </div>
                            <div class="col-xl-5 col-lg-6 col-md-6 d-none d-md-block">
                               <div class="tpsliderthree__img p-relative text-end pt-55">
-                                 <img src="assets/img/slider/slider-05.png" alt="">
-                                 <div class="tpslidertwo__img-shape">
-                                    <img src="assets/img/slider/fasion-tag-02.png" alt="tag">
-                                 </div>
+                              <img src="assets/img/bitenge/cloth4.png" alt=""> 
                               </div>
                            </div>
                         </div>
@@ -58,21 +52,18 @@
                         <div class="row p-relative justify-content-xl-end align-items-center">
                            <div class="col-xl-5 col-lg-6 col-md-6">
                               <div class="tpslidertwo__content slider-content-3">
-                                 <h3 class="tpslidertwo__title mb-10">Wooden <br> Houston Furniture</h3>
-                                 <p>New Modern Stylist Fashionable Women's Wear holder</p>
+                              <h3 class="tpslidertwo__title mb-10">High Quality<br>Dresses </h3>
+                                 <p>High Quality Custom made Dresses For Women At Affordable Prices.</p>
                                  <div class="tpslidertwo__slide-btn d-flex align-items-center ">
-                                    <a class="tp-btn banner-animation mr-25" href="shop-2.html">Shop Now <i
+                                    <a class="tp-btn banner-animation mr-25" href="">Shop Now <i
                                           class="fal fa-long-arrow-right"></i></a>
-                                    <span>Start From <br> <b>$99.99</b></span>
+                                   
                                  </div>
                               </div>
                            </div>
                            <div class="col-xl-5 col-lg-6 col-md-6 d-none d-md-block">
                               <div class="tpsliderthree__img p-relative text-end pt-55">
-                                 <img src="assets/img/slider/slider-06.png" alt="">
-                                 <div class="tpslidertwo__img-shape">
-                                    <img src="assets/img/slider/fasion-tag-02.png" alt="tag">
-                                 </div>
+                              <img src="assets/img/bitenge/cloth3.png" alt=""> 
                               </div>
                            </div>
                         </div>
@@ -98,7 +89,7 @@
                      </div>
                      <div class="tpservicesitem__content">
                         <h4 class="tpservicesitem__title">Free shipping</h4>
-                        <p>Free shipping on orders over.</p>
+                        <p>Free shipping on orders around Kampala.</p>
                      </div>
                   </div>
                </div>
@@ -124,7 +115,7 @@
                      </div>
                      <div class="tpservicesitem__content">
                         <h4 class="tpservicesitem__title">Secured Payments</h4>
-                        <p>We accept all major credit cards</p>
+                        <p>We accept all major credit cards as well as mobile money payments</p>
                      </div>
                   </div>
                </div>
@@ -149,8 +140,8 @@
  <header class="bg-dark py-5" id="main-header">
     <div class="container px-4 px-lg-5 my-5">
         <div class="text-center text-white">
-            <h1 class="display-4 fw-bolder">Description Here</h1>
-            <p class="lead fw-normal text-white-50 mb-0">Looking for your pet's needs? Shop Now!</p>
+            <h1 class="display-4 fw-bolder">Located At</h1>
+            <p class="lead fw-normal text-white-50 mb-0">Grand Imperial Mall</p>
         </div>
     </div>
 </header>

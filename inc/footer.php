@@ -68,8 +68,7 @@
                   <div class="col-lg-3 col-md-4 col-sm-6">
                      <div class="footer-widget footer-col-1 mb-40">
                         <div class="footer-logo mb-30">
-                           <a href="./"> <img src="<?php echo validate_image($_settings->info('logo')) ?>" width="30"
-                           height="30" class="d-inline-block align-top" alt="" loading="lazy"></a>
+                           <a href="./"> <img src="assets/img/logo/logo.png" width="60%" class="d-inline-block align-top" alt="Flora's Collection Uganda" loading="lazy"></a>
                         </div>
                         <div class="footer-content">
                            <p>Whether you’re looking for everyday wear, traditional attire, or custom designs, we have something for everyone. Thank you for supporting local talent and embracing the beauty of African fashion.
