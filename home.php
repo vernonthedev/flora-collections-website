@@ -147,13 +147,34 @@
 </header>
 
 
+      <!-- product-area-start -->
+      <section class="product-area pt-65 pb-40">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-4 col-md-6 col-12">
+                  <div class="tpsection mb-40">
+                     <h4 class="tpsection__title">Trending Products</h4>
+                  </div>
+               </div>
+               <div class="col-lg-8 col-md-6 col-12">
+                  <div class="tpnavbar">
+                     <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                           <button class="nav-link active" id="nav-all-tab" data-bs-toggle="tab"
+                              data-bs-target="#nav-all" type="button" role="tab" aria-controls="nav-all"
+                              aria-selected="true">All Clothes</button>
+                         
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
 
-
-<!-- Section-->
-<section class="py-5">
-    <div class="container px-4 px-lg-5 mt-5">
-        <div class="row gx-4 gx-lg-5 row-cols-md-3 row-cols-xl-4 justify-content-center">
-            <?php 
+            <div class="tab-content" id="nav-tabContent">
+               
+            <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
+                  <div class="row row-cols-xxl-5 row-cols-xl-4 row-cols-lg-3 row-cols-md-3 row-cols-sm-2 row-cols-1">
+                  <?php 
                 $products = $conn->query("SELECT * FROM `products` where status = 1 order by rand() limit 8 ");
                 while($row = $products->fetch_assoc()):
                     $upload_path = base_app.'/uploads/product_'.$row['id'];
@@ -169,32 +190,38 @@
                     while($ir = $inventory->fetch_assoc()){
                         $inv[$ir['size']] = number_format($ir['price']);
                     }
-            ?>
-            <div class="col mb-5">
-                <div class="card h-100 product-item">
-                    <!-- Product image-->
-                    <img class="card-img-top w-100" src="<?php echo validate_image($img) ?>" alt="..." />
-                    <!-- Product details-->
-                    <div class="card-body p-4">
-                        <div class="text-center">
-                            <!-- Product name-->
-                            <h5 class="fw-bolder"><?php echo $row['product_name'] ?></h5>
-                            <!-- Product price-->
-                            <?php foreach($inv as $k=> $v): ?>
-                                <span><b><?php echo $k ?>: </b><?php echo $v ?></span>
-                            <?php endforeach; ?>
+            ?> 
+                  <div class="col">
+                        <div class=" tpproduct pb-15 mb-30">
+                           <div class="tpproduct__thumb p-relative">
+                              <a href=".?p=view_product&id=<?php echo md5($row['id']) ?>">
+                                 <img src="<?php echo validate_image($img) ?>" alt="<?php echo $row['product_name'] ?>">
+                                 <img class="product-thumb-secondary" src="<?php echo validate_image($img) ?>" alt="<?php echo $row['product_name'] ?>">
+                              </a>
+                              <div class="tpproduct__thumb-action">
+                                 <a class="quckview" href=".?p=view_product&id=<?php echo md5($row['id']) ?>"><i class="fal fa-eye"></i></a>
+                              </div>
+                           </div>
+                           <div class="tpproduct__content">
+                              <h3 class="tpproduct__title"><a href=".?p=view_product&id=<?php echo md5($row['id']) ?>"><?php echo $row['product_name'] ?></a></h3>
+                              <div class="tpproduct__priceinfo p-relative">
+                                 <div class="tpproduct__priceinfo-list">
+                                       <!-- Product price-->
+                                       <?php foreach($inv as $k=> $v): ?>
+                                          <span><b><?php echo $k ?>: </b><?php echo $v ?></span>
+                                       <?php endforeach; ?>
+                                 </div>
+                                 <div class="tpproduct__cart">
+                                    <a href=".?p=view_product&id=<?php echo md5($row['id']) ?>"><i class="fal fa-shopping-cart"></i>View More</a>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
-                    </div>
-                    <!-- Product actions-->
-                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center">
-                            <a class="btn btn-flat btn-primary "   href=".?p=view_product&id=<?php echo md5($row['id']) ?>">View</a>
-                        </div>
-                        
-                    </div>
-                </div>
+                     </div>
+                     <?php endwhile; ?>
+                  </div>
+               </div>
             </div>
-            <?php endwhile; ?>
-        </div>
-    </div>
-</section>
+         </div>
+      </section>
+      <!-- product-area-end -->
