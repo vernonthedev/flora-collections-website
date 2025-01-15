@@ -1,3 +1,21 @@
+ <!-- breadcrumb-area -->
+ <section class="breadcrumb__area pt-60 pb-60 tp-breadcrumb__bg" data-background="assets/img/banner/breadcrumb-01.jpg">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-xl-7 col-lg-12 col-md-12 col-12">
+                  <div class="tp-breadcrumb">
+                     <div class="tp-breadcrumb__link mb-10">
+                        <span class="breadcrumb-item-active"><a href="index.html">Home</a></span>
+                        <span>Cart</span>
+                     </div>
+                     <h2 class="tp-breadcrumb__title">Product Cart</h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- breadcrumb-area-end -->
+
 
 <section class="py-5">
     <div class="container">

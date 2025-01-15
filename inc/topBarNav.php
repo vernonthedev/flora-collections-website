@@ -126,10 +126,6 @@
                            <li><a href=""><i class="fal fa-tshirt"></i>Men's Fashion</a></li>
                            <li><a href=""><i class="fal fa-tshirt"></i>Women's Fashion</a></li>
                         </ul>
-                        <div class="coupon-offer d-flex align-items-center justify-content-between">
-                           <span>Coupon: <a href=""> FloraCollection2025</a></span>
-                           <a href="#"> <i class="fal fa-copy"></i></a>
-                        </div>
                      </div>
                   </div>
                </div>
