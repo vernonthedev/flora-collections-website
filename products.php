@@ -72,30 +72,34 @@ elseif(isset($_GET['s'])){
                         $inv[$ir['size']] = number_format($ir['price']);
                     }
             ?>
-            <div class="col mb-5">
-                <div class="card h-100 product-item">
-                    <!-- Product image-->
-                    <img class="card-img-top w-100" src="<?php echo validate_image($img) ?>" loading="lazy" alt="..." />
-                    <!-- Product details-->
-                    <div class="card-body p-4">
-                        <div class="text-center">
-                            <!-- Product name-->
-                            <h5 class="fw-bolder"><?php echo $row['product_name'] ?></h5>
-                            <!-- Product price-->
-                            <?php foreach($inv as $k=> $v): ?>
-                                <span><b><?php echo $k ?>: </b><?php echo $v ?></span>
-                            <?php endforeach; ?>
+            <div class="col">
+                        <div class=" tpproduct pb-15 mb-30">
+                           <div class="tpproduct__thumb p-relative">
+                              <a href=".?p=view_product&id=<?php echo md5($row['id']) ?>">
+                                 <img src="<?php echo validate_image($img) ?>" alt="<?php echo $row['product_name'] ?>">
+                                 <img class="product-thumb-secondary" src="<?php echo validate_image($img) ?>" alt="<?php echo $row['product_name'] ?>">
+                              </a>
+                              <div class="tpproduct__thumb-action">
+                                 <a class="quckview" href=".?p=view_product&id=<?php echo md5($row['id']) ?>"><i class="fal fa-eye"></i></a>
+                              </div>
+                           </div>
+                           <div class="tpproduct__content">
+                              <h3 class="tpproduct__title"><a href=".?p=view_product&id=<?php echo md5($row['id']) ?>"><?php echo $row['product_name'] ?></a></h3>
+                              <div class="tpproduct__priceinfo p-relative">
+                                 <div class="tpproduct__priceinfo-list">
+                                       <!-- Product price-->
+                                       <?php foreach($inv as $k=> $v): ?>
+                                          <span><b><?php echo $k ?></b> - UGX <?php echo $v ?></span>
+                                       <?php endforeach; ?>
+                                 </div>
+                                 <div class="tpproduct__cart">
+                                    <a href=".?p=view_product&id=<?php echo md5($row['id']) ?>"><i class="fal fa-shopping-cart"></i>View More</a>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
-                    </div>
-                    <!-- Product actions-->
-                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center">
-                            <a class="btn btn-flat btn-primary "   href=".?p=view_product&id=<?php echo md5($row['id']) ?>">View</a>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
+                     </div>
+                     
             <?php endwhile; ?>
             <?php 
                 if($products->num_rows <= 0){
