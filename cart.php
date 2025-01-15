@@ -1,27 +1,26 @@
  <!-- breadcrumb-area -->
  <section class="breadcrumb__area pt-60 pb-60 tp-breadcrumb__bg" data-background="assets/img/banner/breadcrumb-01.jpg">
-         <div class="container">
-            <div class="row align-items-center">
-               <div class="col-xl-7 col-lg-12 col-md-12 col-12">
-                  <div class="tp-breadcrumb">
+     <div class="container">
+         <div class="row align-items-center">
+             <div class="col-xl-7 col-lg-12 col-md-12 col-12">
+                 <div class="tp-breadcrumb">
                      <div class="tp-breadcrumb__link mb-10">
-                        <span class="breadcrumb-item-active"><a href="index.html">Home</a></span>
-                        <span>Cart</span>
+                         <span class="breadcrumb-item-active"><a href="index.html">Home</a></span>
+                         <span>Cart</span>
                      </div>
                      <h2 class="tp-breadcrumb__title">Product Cart</h2>
-                  </div>
-               </div>
-            </div>
+                 </div>
+             </div>
          </div>
-      </section>
-      <!-- breadcrumb-area-end -->
-
-
-<section class="py-5">
+     </div>
+ </section>
+ <!-- breadcrumb-area-end -->
+<!-- cart area -->
+ <section class="py-5">
     <div class="container">
         <div class="row">
             <div class="col d-flex justify-content-end mb-2">
-                <button class="btn btn-outline-dark btn-flat btn-sm" type="button" id="empty_cart">Empty Cart</button>
+                <button class="tp-btn tp-color-btn banner-animation" type="button" id="empty_cart">Empty Cart</button>
             </div>
         </div>
         <div class="card rounded-0">
@@ -43,7 +42,11 @@
                     <div class="d-flex w-100 justify-content-between  mb-2 py-2 border-bottom cart-item">
                         <div class="d-flex align-items-center col-8">
                             <span class="mr-2"><a href="javascript:void(0)" class="btn btn-sm btn-outline-danger rem_item" data-id="<?php echo $row['id'] ?>"><i class="fa fa-trash"></i></a></span>
-                            <img src="<?php echo validate_image($img) ?>" loading="lazy" class="cart-prod-img mr-2 mr-sm-2 border" alt="">
+
+                          
+                            <img src="<?php echo validate_image($img) ?>" loading="lazy" class="cart-prod-img mr-2 mr-sm-2 border" alt="" width="10%">
+
+                            
                             <div>
                                 <p class="mb-1 mb-sm-1"><?php echo $row['product_name'] ?></p>
                                 <p class="mb-1 mb-sm-1"><small><b>Size:</b> <?php echo $row['size'] ?></small></p>
@@ -67,133 +70,143 @@
                     </div>
                 <?php endwhile; ?>
                 <div class="d-flex w-100 justify-content-between mb-2 py-2 border-bottom">
-                    <div class="col-8 d-flex justify-content-end"><h4>Grand Total:</h4></div>
-                    <div class="col d-flex justify-content-end"><h4 id="grand-total">-</h4></div>
+                <li>Grand Total in (UGX) <span <h4 id="grand-total"></h4></span></li>
                 </div>
             </div>
         </div>
         <div class="d-flex w-100 justify-content-end">
-            <a href="./?p=checkout" class="btn btn-sm btn-flat btn-dark">Checkout</a>
+            <a href="./?p=checkout" class="tp-btn tp-color-btn banner-animation">Checkout</a>
         </div>
     </div>
 </section>
-<script>
-    function calc_total(){
-        var total  = 0
 
-        $('.total-amount').each(function(){
-            amount = $(this).text()
-            amount = amount.replace(/\,/g,'')
-            amount = parseFloat(amount)
-            total += amount
-        })
-        $('#grand-total').text(parseFloat(total).toLocaleString('en-US'))
-    }
-    function qty_change($type,_this){
-        var qty = _this.closest('.cart-item').find('.cart-qty').val()
-        var price = _this.closest('.cart-item').find('.price').text()
-        var cart_id = _this.closest('.cart-item').find('.cart-qty').attr('data-id')
-        var new_total = 0
-        start_loader();
-        if($type == 'minus'){
-            qty = parseInt(qty) - 1
-        }else{
-            qty = parseInt(qty) + 1
-        }
-        price = parseFloat(price)
-        // console.log(qty,price)
-        new_total = parseFloat(qty * price).toLocaleString('en-US')
-        _this.closest('.cart-item').find('.cart-qty').val(qty)
-        _this.closest('.cart-item').find('.total-amount').text(new_total)
-        calc_total()
+ <script>
+function calc_total() {
+    var total = 0
 
-        $.ajax({
-            url:'classes/Master.php?f=update_cart_qty',
-            method:'POST',
-            data:{id:cart_id, quantity: qty},
-            dataType:'json',
-            error:err=>{
-                console.log(err)
-                alert_toast("an error occured", 'error');
-                end_loader()
-            },
-            success:function(resp){
-                if(!!resp.status && resp.status == 'success'){
-                    end_loader()
-                }else{
-                    alert_toast("an error occured", 'error');
-                    end_loader()
-                }
-            }
-
-        })
-    }
-    function rem_item(id){
-        $('.modal').modal('hide')
-        var _this = $('.rem_item[data-id="'+id+'"]')
-        var id = _this.attr('data-id')
-        var item = _this.closest('.cart-item')
-        start_loader();
-        $.ajax({
-            url:'classes/Master.php?f=delete_cart',
-            method:'POST',
-            data:{id:id},
-            dataType:'json',
-            error:err=>{
-                console.log(err)
-                alert_toast("an error occured", 'error');
-                end_loader()
-            },
-            success:function(resp){
-                if(!!resp.status && resp.status == 'success'){
-                    item.hide('slow',function(){ item.remove() })
-                    calc_total()
-                    end_loader()
-                }else{
-                    alert_toast("an error occured", 'error');
-                    end_loader()
-                }
-            }
-
-        })
-    }
-    function empty_cart(){
-        start_loader();
-        $.ajax({
-            url:'classes/Master.php?f=empty_cart',
-            method:'POST',
-            data:{},
-            dataType:'json',
-            error:err=>{
-                console.log(err)
-                alert_toast("an error occured", 'error');
-                end_loader()
-            },
-            success:function(resp){
-                if(!!resp.status && resp.status == 'success'){
-                   location.reload()
-                }else{
-                    alert_toast("an error occured", 'error');
-                    end_loader()
-                }
-            }
-
-        })
-    }
-    $(function(){
-        calc_total()
-        $('.min-qty').click(function(){
-            qty_change('minus',$(this))
-        })
-        $('.plus-qty').click(function(){
-            qty_change('plus',$(this))
-        })
-        $('#empty_cart').click(function(){
-            // empty_cart()
-            _conf("Are you sure to empty your cart list?",'empty_cart',[])
-        })
-        $('.rem_item').click(function(){
-            _conf("Are you sure to remove the item in cart list?",'rem_item',[$(this).attr('data-id')])
-        })
+    $('.total-amount').each(function() {
+        amount = $(this).text()
+        amount = amount.replace(/\,/g, '')
+        amount = parseFloat(amount)
+        total += amount
     })
-</script>
+    $('#grand-total').text(parseFloat(total).toLocaleString('en-US'))
+}
+
+function qty_change($type, _this) {
+    var qty = _this.closest('.cart-item').find('.cart-qty').val()
+    var price = _this.closest('.cart-item').find('.price').text()
+    var cart_id = _this.closest('.cart-item').find('.cart-qty').attr('data-id')
+    var new_total = 0
+    start_loader();
+    if ($type == 'minus') {
+        qty = parseInt(qty) - 1
+    } else {
+        qty = parseInt(qty) + 1
+    }
+    price = parseFloat(price)
+    // console.log(qty,price)
+    new_total = parseFloat(qty * price).toLocaleString('en-US')
+    _this.closest('.cart-item').find('.cart-qty').val(qty)
+    _this.closest('.cart-item').find('.total-amount').text(new_total)
+    calc_total()
+
+    $.ajax({
+        url: 'classes/Master.php?f=update_cart_qty',
+        method: 'POST',
+        data: {
+            id: cart_id,
+            quantity: qty
+        },
+        dataType: 'json',
+        error: err => {
+            console.log(err)
+            alert_toast("an error occured", 'error');
+            end_loader()
+        },
+        success: function(resp) {
+            if (!!resp.status && resp.status == 'success') {
+                end_loader()
+            } else {
+                alert_toast("an error occured", 'error');
+                end_loader()
+            }
+        }
+
+    })
+}
+
+function rem_item(id) {
+    $('.modal').modal('hide')
+    var _this = $('.rem_item[data-id="' + id + '"]')
+    var id = _this.attr('data-id')
+    var item = _this.closest('.cart-item')
+    start_loader();
+    $.ajax({
+        url: 'classes/Master.php?f=delete_cart',
+        method: 'POST',
+        data: {
+            id: id
+        },
+        dataType: 'json',
+        error: err => {
+            console.log(err)
+            alert_toast("an error occured", 'error');
+            end_loader()
+        },
+        success: function(resp) {
+            if (!!resp.status && resp.status == 'success') {
+                item.hide('slow', function() {
+                    item.remove()
+                })
+                calc_total()
+                end_loader()
+            } else {
+                alert_toast("an error occured", 'error');
+                end_loader()
+            }
+        }
+
+    })
+}
+
+function empty_cart() {
+    start_loader();
+    $.ajax({
+        url: 'classes/Master.php?f=empty_cart',
+        method: 'POST',
+        data: {},
+        dataType: 'json',
+        error: err => {
+            console.log(err)
+            alert_toast("an error occured", 'error');
+            end_loader()
+        },
+        success: function(resp) {
+            if (!!resp.status && resp.status == 'success') {
+                location.reload()
+            } else {
+                alert_toast("an error occured", 'error');
+                end_loader()
+            }
+        }
+
+    })
+}
+$(function() {
+    calc_total()
+    $('.min-qty').click(function() {
+        qty_change('minus', $(this))
+    })
+    $('.plus-qty').click(function() {
+        qty_change('plus', $(this))
+    })
+    $('#empty_cart').click(function() {
+        // empty_cart()
+        _conf("Are you sure to empty your cart list?", 'empty_cart', [])
+    })
+    $('.rem_item').click(function() {
+        _conf("Are you sure to remove the item in cart list?", 'rem_item', [$(this).attr('data-id')])
+    })
+})
+ </script>
