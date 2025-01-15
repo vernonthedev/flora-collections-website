@@ -21,7 +21,7 @@
 <?php $page = isset($_GET['p']) ? $_GET['p'] : 'home';  ?>
 <?php 
     if(!file_exists($page.".php") && !is_dir($page)){
-        include '404.html';
+        include '404.php';
     }else{
     if(is_dir($page))
         include $page.'/index.php';

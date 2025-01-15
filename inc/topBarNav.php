@@ -137,7 +137,7 @@
                                             <a href="./">Home</a>
                                         </li>
                                         <li>
-                                            <a href="">About Us</a>
+                                            <a href="./about.php">About Us</a>
                                         </li>
 
                                         <?php 
@@ -222,7 +222,7 @@
                                             <a href="./">Home</a>
                                         </li>
                                         <li>
-                                            <a href="">About Us</a>
+                                            <a href="./about.php">About Us</a>
                                         </li>
 
                                         <?php 

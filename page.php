@@ -9,6 +9,8 @@
     else include("404.php");
 ?>
 
+<!-- this a page template -->
+
 <?php require_once('inc/footer.php') ?>
 </body>
 </html>

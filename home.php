@@ -208,7 +208,7 @@
                                  <div class="tpproduct__priceinfo-list">
                                        <!-- Product price-->
                                        <?php foreach($inv as $k=> $v): ?>
-                                          <span><b><?php echo $k ?></b><?php echo $v ?></span>
+                                          <span><b><?php echo $k ?></b> - UGX <?php echo $v ?></span>
                                        <?php endforeach; ?>
                                  </div>
                                  <div class="tpproduct__cart">
