@@ -1,4 +1,22 @@
-    
+ <!-- breadcrumb-area -->
+ <section class="breadcrumb__area pt-60 pb-60 tp-breadcrumb__bg" data-background="assets/img/banner/breadcrumb-01.jpg">
+     <div class="container">
+         <div class="row align-items-center">
+             <div class="col-xl-7 col-lg-12 col-md-12 col-12">
+                 <div class="tp-breadcrumb">
+                     <div class="tp-breadcrumb__link mb-10">
+                         <span class="breadcrumb-item-active"><a href="index.php">Home</a></span>
+                         <span>Account Settings</span>
+                     </div>
+                     <h2 class="tp-breadcrumb__title">My Account</h2>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </section>
+ <!-- breadcrumb-area-end -->
+
+
 <section class="py-2">
     <div class="container">
         <div class="card rounded-0">
@@ -35,7 +53,7 @@
                                     <td><?php echo $i++ ?></td>
                                     <td><?php echo date("Y-m-d H:i",strtotime($row['date_created'])) ?></td>
                                     <td><a href="javascript:void(0)" class="view_order" data-id="<?php echo $row['id'] ?>"><?php echo md5($row['id']); ?></a></td>
-                                    <td><?php echo number_format($row['amount']) ?> </td>
+                                    <td>UGX <?php echo number_format($row['amount']) ?> </td>
                                     <td class="text-center">
                                             <?php if($row['status'] == 0): ?>
                                                 <span class="badge badge-light text-dark">Pending</span>

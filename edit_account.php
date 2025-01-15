@@ -1,3 +1,23 @@
+ <!-- breadcrumb-area -->
+ <section class="breadcrumb__area pt-60 pb-60 tp-breadcrumb__bg" data-background="assets/img/banner/breadcrumb-01.jpg">
+     <div class="container">
+         <div class="row align-items-center">
+             <div class="col-xl-7 col-lg-12 col-md-12 col-12">
+                 <div class="tp-breadcrumb">
+                     <div class="tp-breadcrumb__link mb-10">
+                         <span class="breadcrumb-item-active"><a href="index.php">Home</a></span>
+                         <span>Manage Account</span>
+                     </div>
+                     <h2 class="tp-breadcrumb__title">Manage Account Settings</h2>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </section>
+ <!-- breadcrumb-area-end -->
+
+
+
 <section class="py-5">
     <div class="container">
         <div class="card rounded-0">
@@ -10,10 +30,12 @@
                     <div class="col-md-6">
                         <form action="" id="update_account">
                         <input type="hidden" name="id" value="<?php echo $_settings->userdata('id') ?>">
+                        <div class="tptrack__id mb-10">
                             <div class="form-group">
                                 <label for="firstname" class="control-label">Firstname</label>
                                 <input type="text" name="firstname" class="form-control form" value="<?php echo $_settings->userdata('firstname') ?>" required>
                             </div>
+                        </div>
                             <div class="form-group">
                                 <label for="lastname" class="control-label">Lastname</label>
                                 <input type="text" name="lastname" class="form-control form" value="<?php echo $_settings->userdata('lastname') ?>" required>
