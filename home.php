@@ -226,3 +226,53 @@
          </div>
       </section>
       <!-- product-area-end -->
+
+
+      
+      <!-- banner-area-start -->
+      <section class="banner-area pb-20">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-6 col-lg-12 col-md-12">
+                  <div class="tpbanneritems p-relative">
+                     <div class="tpbanneritem__thumb mb-20">
+                        <img src="https://fakeimg.pl/708x279?text=Home+Poster" alt="banner-img">
+                        <div class="tpbanneritem__content">
+                           <p>More Clothes</p>
+                           <h5 class="tpbanneritem__title mb-60"><a href="./">New Modern & Stylist <br> Clothes</a></h5>
+                           <div class="tpbanneritem__btn">
+                              <a class="tp-btn green-btn banner-animation" href="./">Shop Now <i
+                                    class="fal fa-long-arrow-right"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-6 col-lg-12 col-md-12">
+                  <div class="tpbanneritem">
+                     <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                           <div class="tpbanneritem__thumb banner-animation p-relative">
+                              <img src="https://fakeimg.pl/329x307?text=Poster" alt="banner-img">
+                              <div class="tpbanneritem__text">
+                                 <h5 class="tpbanneritem__text-title"><a href="#">Other<br> Collections</a></h5>
+                              </div>
+                              <span class="tp-banner-item-small">100 More Added</span>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                           <div class="tpbanneritem__thumb banner-animation p-relative">
+                              <img src="https://fakeimg.pl/329x308?text=Poster" alt="banner-img">
+                              <div class="tpbanneritem__text">
+                                 <h5 class="tpbanneritem__text-title"><a href="#">Minimal Cultural Designs</a></h5>
+                                 <h3 class="tpbanneritem__text-price">-10% Offer</h3>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- banner-area-end -->
