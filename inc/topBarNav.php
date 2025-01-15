@@ -86,7 +86,7 @@
                         </div>
                         <div class="header-meta__social d-flex align-items-center ml-25">
                         <?php if(!isset($_SESSION['userdata']['id'])): ?>
-                        <button class="btn btn-outline-dark ml-2" id="login-btn" type="button">Login</button>
+                       <a href="login.php"><button class="btn btn-outline-dark ml-2" id="login-btn" type="button">Login</button></a> 
                         <?php else: ?>
                         <a class="text-dark mr-2 nav-link" href="./?p=cart">
                             <i class="bi-cart-fill me-1"></i>
@@ -264,7 +264,7 @@
                 
                   <div class="header-meta__social  d-flex align-items-center"> 
                   <?php if(!isset($_SESSION['userdata']['id'])): ?>
-                        <button class="btn btn-outline-dark ml-2" id="login-btn" type="button">Login</button>
+                      <a href="login.php"><button class="btn btn-outline-dark ml-2" type="button">Login </button></a>
                         <?php else: ?>
                         <a class="text-dark mr-2 nav-link" href="./?p=cart">
                             <i class="bi-cart-fill me-1"></i>
@@ -322,7 +322,7 @@
                   </div>
                   <div class="header-meta__social d-flex align-items-center ml-25">
                   <?php if(!isset($_SESSION['userdata']['id'])): ?>
-                        <button class="btn btn-outline-dark ml-2" id="login-btn" type="button">Login</button>
+                     <a href="login.php"><button class="btn btn-outline-dark ml-2" type="button">Login </button></a>
                         <?php else: ?>
                         <a class="text-dark mr-2 nav-link" href="./?p=cart">
                             <i class="bi-cart-fill me-1"></i>
@@ -367,7 +367,7 @@
                   <div class="header-meta m-0 d-flex align-items-center">
                      <div class="header-meta__social d-flex align-items-center"> 
                      <?php if(!isset($_SESSION['userdata']['id'])): ?>
-                        <button class="btn btn-outline-dark ml-2" id="login-btn" type="button">Login</button>
+                        <a href="login.php"><button class="btn btn-outline-dark ml-2" type="button">Login</button></a>
                         <?php else: ?>
                         <a class="text-dark mr-2 nav-link" href="./?p=cart">
                             <i class="bi-cart-fill me-1"></i>
@@ -427,7 +427,7 @@
          </div>
       </div>
       <div class="tpsideinfo__account-link">
-         <a href=""><i class="fal fa-user"></i> Login / Register</a>
+         <a href="login.php"><i class="fal fa-user"></i> Login / Register</a>
       </div>
    </div>
    <div class="body-overlay"></div>
