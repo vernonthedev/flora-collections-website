@@ -82,7 +82,7 @@
                         <h4 class="footer-widget__title mb-30">Information</h4>
                         <div class="footer-widget__links">
                            <ul>
-                              <li><a href="#">About Us</a></li>
+                              <li><a href="about.php">About Us</a></li>
                               <li><a href="#">Frequently Asked Questions</a></li>
                               <li><a href="#">Ordering Tracking</a></li>
                               <li><a href="#">Contact Us</a></li>
