@@ -137,14 +137,14 @@
       </section>
       <!-- services-area-end -->
  
- <header class="bg-dark py-5" id="main-header">
-    <div class="container px-4 px-lg-5 my-5">
-        <div class="text-center text-white">
-            <h1 class="display-4 fw-bolder">Located At</h1>
-            <p class="lead fw-normal text-white-50 mb-0">Grand Imperial Mall</p>
-        </div>
-    </div>
-</header>
+      <header class="bg-dark py-5" id="main-header">
+         <div class="container px-4 px-lg-5 my-5">
+            <div class="text-center text-white">
+                  <h1 class="display-4 fw-bolder">Located At</h1>
+                  <p class="lead fw-normal text-white-50 mb-0">Grand Imperial Mall</p>
+            </div>
+         </div>
+      </header>
 
 
       <!-- product-area-start -->
@@ -208,7 +208,7 @@
                                  <div class="tpproduct__priceinfo-list">
                                        <!-- Product price-->
                                        <?php foreach($inv as $k=> $v): ?>
-                                          <span><b><?php echo $k ?>: </b><?php echo $v ?></span>
+                                          <span><b><?php echo $k ?></b><?php echo $v ?></span>
                                        <?php endforeach; ?>
                                  </div>
                                  <div class="tpproduct__cart">
@@ -218,6 +218,7 @@
                            </div>
                         </div>
                      </div>
+                     
                      <?php endwhile; ?>
                   </div>
                </div>

@@ -1,6 +1,6 @@
 <?php 
-$title = "Your Pets Deserve The Best";
-$sub_title = "Explore our products for your pet.";
+$title = "All Our Bitenge";
+$sub_title = "Explore our nice clothes.";
 if(isset($_GET['c']) && isset($_GET['s'])){
     $cat_qry = $conn->query("SELECT * FROM categories where md5(id) = '{$_GET['c']}'");
     if($cat_qry->num_rows > 0){
@@ -33,6 +33,8 @@ elseif(isset($_GET['s'])){
         </div>
     </div>
 </header>
+
+
 <!-- Section-->
 <section class="py-5">
     <div class="container-fluid px-4 px-lg-5 mt-5">
